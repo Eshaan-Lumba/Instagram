@@ -6,14 +6,31 @@
 //
 
 import UIKit
+import Parse
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UIWindowSceneDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let parseConfig = ParseClientConfiguration {
+                    $0.applicationId = "6RZDqnpSCTzIwtLL9ZUV3dRMbHHmDWtZIrqX94Le"
+                    $0.clientKey = "DiRoMfb9cii6O8vwKtqCIZRGvnIlI16KrsgmVPIY"
+                    $0.server = "https://parseapi.back4app.com"
+            }
+            Parse.initialize(with: parseConfig)
+
+//        // if the user is already logged in
+//        if PFUser.current() != nil {
+//            let main = UIStoryboard(name: "Main", bundle: nil)
+//            let feedNavigationController = main.instantiateViewController(identifier: "FeedNavigationController")
+//
+//            window?.rootViewController = feedNavigationController
+//        }
+        
         return true
     }
 
