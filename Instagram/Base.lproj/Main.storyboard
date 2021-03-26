@@ -109,13 +109,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a cool photo!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngo-Ky-bkM">
-                                                    <rect key="frame" x="75.333333333333329" y="420" width="152.33333333333337" height="21"/>
+                                                    <rect key="frame" x="75.333333333333329" y="412" width="152.33333333333337" height="48"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eshaan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iec-gQ-SL6">
-                                                    <rect key="frame" x="8.0000000000000036" y="420" width="59.333333333333343" height="21"/>
+                                                    <rect key="frame" x="8.0000000000000036" y="412" width="59.333333333333343" height="48"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -125,11 +125,11 @@
                                                 <constraint firstItem="iec-gQ-SL6" firstAttribute="leading" secondItem="fpI-MF-oCd" secondAttribute="leading" id="ATF-Ad-ODN"/>
                                                 <constraint firstItem="ngo-Ky-bkM" firstAttribute="leading" secondItem="iec-gQ-SL6" secondAttribute="trailing" constant="8" id="FUs-CO-SdX"/>
                                                 <constraint firstItem="iec-gQ-SL6" firstAttribute="centerY" secondItem="ngo-Ky-bkM" secondAttribute="centerY" id="OPk-jU-E8N"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="iec-gQ-SL6" secondAttribute="bottom" constant="19" id="aHR-mh-GtN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="iec-gQ-SL6" secondAttribute="bottom" id="aHR-mh-GtN"/>
                                                 <constraint firstItem="fpI-MF-oCd" firstAttribute="leading" secondItem="GlV-LP-9RN" secondAttribute="leading" constant="8" id="c2Z-5N-S8M"/>
-                                                <constraint firstItem="iec-gQ-SL6" firstAttribute="top" secondItem="fpI-MF-oCd" secondAttribute="bottom" constant="8" id="dy6-gV-kyv"/>
+                                                <constraint firstItem="iec-gQ-SL6" firstAttribute="top" secondItem="fpI-MF-oCd" secondAttribute="bottom" id="dy6-gV-kyv"/>
                                                 <constraint firstItem="fpI-MF-oCd" firstAttribute="top" secondItem="GlV-LP-9RN" secondAttribute="top" constant="8" id="kUL-4k-fJq"/>
-                                                <constraint firstItem="ngo-Ky-bkM" firstAttribute="top" secondItem="fpI-MF-oCd" secondAttribute="bottom" constant="8" id="nzZ-90-nTJ"/>
+                                                <constraint firstItem="ngo-Ky-bkM" firstAttribute="top" secondItem="fpI-MF-oCd" secondAttribute="bottom" id="nzZ-90-nTJ"/>
                                                 <constraint firstAttribute="trailing" secondItem="fpI-MF-oCd" secondAttribute="trailing" constant="8" id="pg7-Em-MFv"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -139,40 +139,50 @@
                                             <outlet property="usernameLabel" destination="iec-gQ-SL6" id="hNa-bg-R0u"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" id="B0E-6J-xdo" customClass="CommentCell" customModule="Instagram" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="499" width="390" height="37.333332061767578"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CommentCell" id="B0E-6J-xdo" customClass="CommentCell" customModule="Instagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="499" width="390" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B0E-6J-xdo" id="SGS-UG-hod" customClass="CommentCell" customModule="Instagram" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="37.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKY-3R-lXh">
-                                                    <rect key="frame" x="16" y="8" width="52" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Friend" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4k-5J-4tt">
+                                                    <rect key="frame" x="11" y="11" width="61" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgZ-M6-Lyh">
-                                                    <rect key="frame" x="76" y="7.9999999999999982" width="74.666666666666686" height="20.333333333333329"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SY-2B-HWS">
+                                                    <rect key="frame" x="88" y="11" width="282" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="lKY-3R-lXh" firstAttribute="leading" secondItem="SGS-UG-hod" secondAttribute="leading" constant="16" id="Ai6-JN-zU9"/>
-                                                <constraint firstItem="lKY-3R-lXh" firstAttribute="top" secondItem="SGS-UG-hod" secondAttribute="top" constant="8" id="Bjj-V6-ytY"/>
-                                                <constraint firstItem="QgZ-M6-Lyh" firstAttribute="leading" secondItem="lKY-3R-lXh" secondAttribute="trailing" constant="8" id="I2w-Do-q9A"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lKY-3R-lXh" secondAttribute="bottom" constant="8" id="Mxj-j4-PsD"/>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QgZ-M6-Lyh" secondAttribute="bottom" constant="8" id="cUm-0D-bm1"/>
-                                                <constraint firstItem="QgZ-M6-Lyh" firstAttribute="top" secondItem="SGS-UG-hod" secondAttribute="top" constant="8" id="eRU-1u-Uuq"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QgZ-M6-Lyh" secondAttribute="trailing" constant="8" id="uiH-9K-Aa6"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="commentNameLabel" destination="lKY-3R-lXh" id="blg-VI-hlP"/>
-                                            <outlet property="commentTextLabel" destination="QgZ-M6-Lyh" id="w9w-su-1cU"/>
+                                            <outlet property="commentNameLabel" destination="l4k-5J-4tt" id="kQY-9d-LJl"/>
+                                            <outlet property="commentTextLabel" destination="2SY-2B-HWS" id="wNF-sk-kPR"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="o0Q-4Y-Soj">
+                                        <rect key="frame" x="0.0" y="542.66666793823242" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o0Q-4Y-Soj" id="Paa-Nq-VRO">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWL-Zn-1a9">
+                                                    <rect key="frame" x="11" y="11" width="369" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemGray2Color"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -273,6 +283,9 @@
         <image name="instagram_logo" width="255" height="108"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -13,6 +13,7 @@ class CommentCell: UITableViewCell {
     @IBOutlet weak var commentTextLabel: UILabel!
     
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
